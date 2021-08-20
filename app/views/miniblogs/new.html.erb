@@ -1,0 +1,9 @@
+<div class="content row">
+    <div class="container">
+        <h3>本文</h3>
+        <%= form_with(model: @miniblog, class: 'form',  local: true) do |form| %>
+          <%= form.text_area :text, placeholder: "", rows: "10", class: 'text_area' %>
+          <%= form.submit "SEND", class: 'submit-btn'%>
+        <% end %>
+    </div>
+</div>

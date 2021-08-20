@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+// 以下はリセットSCSSです。
 body {
   margin: 0;
   padding: 0;
@@ -29,6 +29,17 @@ a:hover {
   
 }
 
+// 以下は共通部分のSCSSです。
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.container h3 {
+  color: black;
+  opacity: 0.6;
+}
+// 以下はapplication.html.erbのSCSSです
 header {
   height: 50px;
   margin: 0 auto;
@@ -59,4 +70,42 @@ header {
     list-style: none;
     color: white;
     padding: 15px 0;
+}
+
+// 以下はindex.html.erbのSCSSです。
+.content_post {
+  border: 1px solid gray;
+  margin-bottom: 50px;
+  padding: 40px;
+}
+
+.btn-lists {
+  display:flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 55%;
+}
+
+.btn-list {
+  padding: 10px 30px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+// 以下はnew.html.erbのSCSSです。
+.text_area {
+  border: none;
+  border-bottom: 2px solid green;
+  width: 100%;
+}
+
+.submit-btn {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-left: 10px;
 }

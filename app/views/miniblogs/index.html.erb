@@ -1,1 +1,17 @@
-index
+<div class="contents row">
+  <div class="container">
+  <% @miniblogs.each do |miniblog| %>
+      <div class="content_post">
+        <p><%= miniblog.text %></p>
+        <ul class="btn-lists">
+          <li>
+            <%= link_to 'SHOW', '#', class: 'btn-list' %>
+          <li>
+            <%= link_to 'EDIT', edit_miniblog_path(miniblog.id), method: :get, class: 'btn-list' %>
+          <li>
+            <%= link_to 'DESTROY', miniblog_path(miniblog.id), method: :delete, class: 'btn-list' %>
+        </ul>  
+      </div>
+    <% end %>  
+  </div>
+</div>

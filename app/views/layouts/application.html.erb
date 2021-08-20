@@ -12,13 +12,13 @@
   <body>
     <header>
       <div class="heading">
-        <h1 class="title">Blogs</h1>
+        <h1><%= link_to 'Blog', root_path, class: 'title' %></h1>
       </div>
       <div class="navbar">
         <ul class="nav-lists">
           <li class="nav-list">SignIn</li>
           <li class="nav-list">SignOut</li>
-          <li class="nav-list">New</li>
+          <li class="nav-list"><%= link_to 'New', new_miniblog_path, class: 'nav-list' %></li>
         </ul>
       </div>
     </header>

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+}
+
+a:hover {
+  
+}
+
+header {
+  height: 50px;
+  margin: 0 auto;
+  background-color: green;
+  display: flex;
+  justify-content: space-around;
+}
+
+.heading {
+    width: 70%;
+}
+
+.title {
+    margin-left: 30px;
+    color: white;
+}
+
+.navbar {
+    width: 30%;
+}
+
+.nav-lists {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list {
+    list-style: none;
+    color: white;
+    padding: 15px 0;
+}

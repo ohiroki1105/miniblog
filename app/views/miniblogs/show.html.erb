@@ -1,0 +1,15 @@
+<div class="contents row">
+    <div class="content_post">
+        <div class="container">
+          <p><%= @miniblog.text %></p>
+          <ul class="btn-lists btn_show_lists">
+          <li>
+            <%= link_to 'EDIT', edit_miniblog_path(@miniblog.id), method: :get, class: 'btn-list' %>
+          </li>
+          <li>
+            <%= link_to 'DESTROY', miniblog_path(@miniblog.id), method: :delete, class: 'btn-list' %>
+          </li>
+        </ul> 
+        </div>
+    </div>
+</div>

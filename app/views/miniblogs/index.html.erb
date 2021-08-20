@@ -5,13 +5,15 @@
         <p><%= miniblog.text %></p>
         <ul class="btn-lists">
           <li>
-            <%= link_to 'SHOW', '#', class: 'btn-list' %>
+            <%= link_to 'SHOW', miniblog_path(miniblog.id), method: :get, class: 'btn-list' %>
           <li>
             <%= link_to 'EDIT', edit_miniblog_path(miniblog.id), method: :get, class: 'btn-list' %>
           <li>
             <%= link_to 'DESTROY', miniblog_path(miniblog.id), method: :delete, class: 'btn-list' %>
         </ul>  
       </div>
-    <% end %>  
+    <% end %>
   </div>
+  
+  <div class="confirmation_display_before_deletion"></div>
 </div>

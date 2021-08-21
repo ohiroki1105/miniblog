@@ -3,7 +3,7 @@ class MiniblogsController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
     
     def index
-      @miniblogs = Miniblog.includes(:user)
+      @miniblogs = Miniblog.includes(:user).order("created_at DESC")
     end
     
     def new

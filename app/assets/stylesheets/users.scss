@@ -1,0 +1,57 @@
+@charset "UTF-8";
+// 以下はリセットSCSSです。
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+}
+
+a:hover {
+  
+}
+// 以下はindex.html.erbのSCSSです。
+.content_post {
+  border: 1px solid gray;
+  margin-bottom: 50px;
+  padding: 40px;
+}
+
+.btn-lists {
+  display:flex;
+  width: 100%;
+}
+
+.btn-list {
+  padding: 10px 15px;
+  margin-right: 20px; 
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+}

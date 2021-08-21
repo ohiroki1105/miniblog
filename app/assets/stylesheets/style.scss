@@ -36,8 +36,8 @@ a:hover {
 
 // 以下は共通部分のSCSSです。
 .container {
-  width: 80%;
-  margin: 50px auto;
+  width: calc(100vw - 30%);
+  margin: 80px auto;
 }
 
 .container h3 {
@@ -46,7 +46,7 @@ a:hover {
 }
 // 以下はapplication.html.erbのSCSSです
 header {
-  height: 50px;
+  height: 60px;
   margin: 0 auto;
   background-color: green;
   display: flex;
@@ -55,6 +55,7 @@ header {
 
 .heading {
     width: 70%;
+    padding: 5px 0;
 }
 
 .title {
@@ -74,6 +75,7 @@ header {
 .nav-list {
     color: white;
     padding: 15px 0;
+    cursor: pointer;
 }
 
 // 以下はindex.html.erbのSCSSです。
@@ -85,11 +87,12 @@ header {
 
 .btn-lists {
   display:flex;
+  width: 100%;
 }
 
 .btn-list {
-  padding: 10px 30px;
-  margin-right: 10px; 
+  padding: 10px 15px;
+  margin-right: 20px; 
   background-color: green;
   color: white;
   border: none;
@@ -156,4 +159,40 @@ header {
 // 以下はshow.html.erbのSCSSです。
 .btn_show_lists {
   width: 36%;
+}
+
+// 以下は/sessions/new.html.erbのSCSSです。
+.new_user {
+  width: calc(100vw - 50%);
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.devise-title {
+  text-align: center;
+}
+
+.field,
+.actions {
+  width: 80%;
+  margin:  0 auto 10px;
+}
+#user_nickname,
+#user_email,
+#user_password,
+#user_password_confirmation,
+.sign-up-btn,
+.sign-in-btn {
+  width: 100%;
+  height: 30px;
+}
+
+.sign-up-btn,
+.sign-in-btn {
+  background-color: green;
+  border-radius: 20px;
+  margin: 30px 0;
+  border: none;
+  color: white;
 }

@@ -7,9 +7,16 @@
             <%= link_to 'EDIT', edit_miniblog_path(@miniblog.id), method: :get, class: 'btn-list' %>
           </li>
           <li>
-            <%= link_to 'DESTROY', miniblog_path(@miniblog.id), method: :delete, class: 'btn-list' %>
+            <p  class="btn-list pull-down-list" id="clickButton">DESTROY</p>
           </li>
         </ul> 
         </div>
+        <div class="confirmation" id="confirmation_display_before_deletion">
+        <h3>Are you sure?</h3>
+        <ul>
+          <li><p class="before-delete-btn" id="cancelButton">NO</p></li>
+          <li><%= link_to 'OK', miniblog_path(@miniblog.id), method: :delete, class: 'before-delete-btn'%></li>
+        </ul>
+      </div>
     </div>
 </div>

@@ -7,12 +7,14 @@
           <li>
             <%= link_to 'SHOW', miniblog_path(miniblog.id), method: :get, class: 'btn-list' %>
           </li>
+          <% if user_signed_in? && current_user.id == miniblog.user_id %>
           <li>
             <%= link_to 'EDIT', edit_miniblog_path(miniblog.id), method: :get, class: 'btn-list' %>
           </li>
           <li>
             <p  class="btn-list pull-down-list" id="clickButton">DESTROY</p>
           </li>
+          <% end %>
         </ul>  
       </div>
       <div class="confirmation" id="confirmation_display_before_deletion">

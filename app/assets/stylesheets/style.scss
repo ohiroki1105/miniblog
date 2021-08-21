@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -16,6 +17,10 @@ img {
 ul {
   margin: 0;
   padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 a {
@@ -67,7 +72,6 @@ header {
 }
 
 .nav-list {
-    list-style: none;
     color: white;
     padding: 15px 0;
 }
@@ -81,18 +85,57 @@ header {
 
 .btn-lists {
   display:flex;
-  justify-content: space-around;
-  list-style: none;
-  width: 55%;
 }
 
 .btn-list {
   padding: 10px 30px;
+  margin-right: 10px; 
   background-color: green;
   color: white;
   border: none;
   border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
 }
+
+#confirmation_display_before_deletion {
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  position: absolute;
+  position: fixed;
+  top: 30px;
+  left: calc(100vw - 50%);
+  background-color: white;
+  z-index: 1;
+  border: 1px solid black;
+  display: none;
+  }
+  
+  .confirmation_display_before_deletion ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .confirmation_display_before_deletion li {
+    border: 2px solid lightgray;
+    padding: 2px 16px;
+  }
+  
+  .confirmation ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .before-delete-btn {
+    color: white;
+    background-color: gray;
+    border: 1px solid gray;
+    display: inline-block;
+    padding: 5px 15px;
+    cursor: pointer;
+
+  }
 // 以下はnew.html.erbのSCSSです。
 .text_area {
   border: none;
